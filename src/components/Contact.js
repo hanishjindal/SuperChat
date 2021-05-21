@@ -5,7 +5,7 @@ import Footer from './Footer'
 const Contact = () => {
     return (
         <div className="homeClass contactClass">
-            <h1>Contact</h1>
+            <h1>Contact Page</h1>
             <Footer />
         </div>
     )
