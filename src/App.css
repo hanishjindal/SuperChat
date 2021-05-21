@@ -1,38 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background-color: #282c34; */
+  scroll-behavior: smooth;
+}
+
 .App {
+  text-align: center;
+  /* max-width: 728px; */
+  margin: 0 auto;
+}
+
+.Superchat header {
+  background-color: #181717;
+  height: 8vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  /* max-width: 728px; */
+  /* top: 57px; */
+  top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 99;
+  padding: 10px;
+  /* box-sizing: border-box; */
+}
+
+.Superchat header h1{
+  position: relative;
+  top: 0.7vh;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(40, 37, 53);
+  /* background: url(./components/Background.jpg) center fixed no-repeat; */
+}
+
+main {
+  position: relative;
+  top: 2.6em;
+  padding: 2%;
+  height: 74vh;
+  /* margin: 10vh 0 0; */
+  /* margin-bottom: 130px; */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  /* max-width: 728px; */
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sign-out:hover{
+  background-color: #86a2db;
+}
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.message {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+.superImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .navTabs {
+    position: absolute;
+    right: 4vh;
+  }
+
+  .navGap {
+    width: 15vh;
+    font-size: 2vh;
+    font-weight: 500;
+  }
+
+  .navGap:hover {
+    background: #86a2db;
+    border-radius: 5px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bootFooter {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 43px;
+  background: #e3f2fd;
+  z-index: 9999999999;
+}
+
+.footerText {
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  background: #e3f2fd;
+  font-size: 2.35vh;
+}
+
+.sign-out {
+  max-height: 40px;
+  padding: 4px 23px;
+}
+
+.superNav {
+  font-size: 3vh;
+}
+
+.warningClass{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.chatContent main{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeClass{
+  position: relative;
+  top: 100px;
+  z-index: 999999;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.navbar{
+  z-index: 999999999 !important;
+}
+
+.contactClass{
+  background-color: #000;
 }
