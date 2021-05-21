@@ -43,10 +43,10 @@ function SignIn() {
 
   return (
     <div className="warningClass">
-      <button className="sign-in" onClick={signInWithGoogle}>
+      <button className="sign-in superchatButton" onClick={signInWithGoogle}>
         Sign in with Google
       </button>
-      <p>
+      <p className="superchatP">
         Do not violate the community guidelines or you will be banned for life!
       </p>
       <Footer />
@@ -57,7 +57,7 @@ function SignIn() {
 function SignOut() {
   return (
     auth.currentUser && (
-      <button className="sign-out" onClick={() => auth.signOut()}>
+      <button className="sign-out superchatButton" onClick={() => auth.signOut()}>
         Sign Out
       </button>
     )
@@ -98,14 +98,14 @@ function ChatRoom() {
         <span ref={dummy}></span>
       </main>
 
-      <form onSubmit={sendMessage}>
-        <input
+      <form className="superchatForm" onSubmit={sendMessage}>
+        <input className="superchatInput"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
           placeholder="say something nice"
         />
 
-        <button type="submit" disabled={!formValue}>
+        <button className="superchatButton" type="submit" disabled={!formValue}>
           🕊️
         </button>
       </form>
@@ -126,7 +126,7 @@ function ChatMessage(props) {
             photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
           }
         />
-        <p>{text}</p>
+        <p className="superchatP">{text}</p>
       </div>
     </>
   );

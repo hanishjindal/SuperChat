@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import moon from "./img/moon.png";
 import stars from "./img/stars.png";

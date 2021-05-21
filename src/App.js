@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from './components/Home';
+import Home from './components/home/Home';
 import About from './components/About';
 import Header from './components/Header';
 import Superchat from './components/Superchat';
-import Contact from './components/Contact';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
