@@ -30,7 +30,7 @@ const Superchat = () => {
         <h1>⚛️🔥💬</h1>
         <SignOut />
       </header>
-      <section>{user ? <ChatRoom /> : <SignIn />}</section>
+      <section className="superchatSection">{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
   );
 };

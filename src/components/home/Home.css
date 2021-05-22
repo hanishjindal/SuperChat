@@ -27,7 +27,7 @@
 }
 
 .homeSection img#moon{
-    margin-top: 11vh;
+    margin-top: 8vh;
     top: -100%;
     mix-blend-mode: screen;
 }
@@ -50,17 +50,17 @@
 }
 
 #text {
-    top: 40%;
+    top: 38vh;
     margin-right: -2000px;
     /* margin-left: 50px; */
     position: absolute;
     color: #fff;
     font-size: 5.5vw;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 #text span {
-    font-weight: 700;
+    color: #9c0fdd;
 }
 
 #btn {
@@ -68,7 +68,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 80px;
+    margin-top: 75px;
     text-decoration: none;
     display: inline-block;
     padding: 8px 50px;
@@ -77,4 +77,10 @@
     font-size: 1.4em;
     color: #2b1055;
     z-index: 1000000;
+}
+
+@media (max-width: 700px) {
+    .homeSection img#moon{
+        margin-top: 18vh;
+    }
 }

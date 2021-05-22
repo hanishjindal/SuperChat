@@ -1,0 +1,130 @@
+.aboutClass{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+    min-height: 100vh;
+}
+
+.aboutSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+.aboutSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.aboutSection .aboutContainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.aboutSection .aboutContainer .aboutCard{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.aboutSection .aboutContainer .aboutCard .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.aboutSection .aboutContainer .aboutCard:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.aboutSection .aboutContainer .aboutCard .imgBox {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.aboutSection .aboutContainer .aboutCard .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.aboutSection .aboutContainer .aboutCard .contentBox h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.aboutSection .aboutContainer .aboutCard .contentBox h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.aboutSection .aboutContainer .aboutCard .aboutSci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    left: 18%;
+}
+
+.aboutSection .aboutContainer .aboutCard .aboutSci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.aboutSection .aboutContainer .aboutCard:hover .aboutSci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.aboutSection .aboutContainer .aboutCard .aboutSci li a {
+    color: #fff;
+    font-size: 24px;
+}

@@ -18,7 +18,7 @@ const Home = () => {
         <img src={moon} id="moon" />
         <img src={mountains_behind} id="mountains_behind" />
         <h2 id="text">
-          <span>S</span>uper<span>C</span>hat
+          Super<span>Chat</span>
         </h2>
         <Link to='/superchat' id="btn">
           SuperChat
