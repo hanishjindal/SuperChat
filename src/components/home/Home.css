@@ -27,7 +27,7 @@
 }
 
 .homeSection img#moon{
-    margin-top: 8vh;
+    margin-top: 4vh;
     top: -100%;
     mix-blend-mode: screen;
 }
@@ -50,17 +50,18 @@
 }
 
 #text {
-    top: 38vh;
+    top: 35vh;
     margin-right: -2000px;
     /* margin-left: 50px; */
     position: absolute;
     color: #fff;
     font-size: 5.5vw;
-    font-weight: 500;
+    font-weight: 350;
 }
 
 #text span {
     color: #9c0fdd;
+    font-weight: 600;
 }
 
 #btn {
@@ -75,8 +76,15 @@
     background: #fff;
     border-radius: 40px;
     font-size: 1.4em;
+    font-weight: 500;
     color: #2b1055;
     z-index: 1000000;
+}
+
+@media (max-width: 1000px) {
+    .homeSection img#moon{
+        margin-top: 12vh;
+    }
 }
 
 @media (max-width: 700px) {

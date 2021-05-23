@@ -41,9 +41,10 @@ class Contact2 extends Component {
   handleSubmit = (event) => {
     alert(
       `Hi ${this.state.firstName} ${this.state.lastName},
-Your email is "${this.state.userEmail}" and your mobile number is "${this.state.userTel}"
+Your email is "${this.state.userEmail}"
+Your mobile number is "${this.state.userTel}"
 
-You message is:
+Your message is:
 ${this.state.userText}
 
 Thanks for contacting us, We will reach you soon...
@@ -66,8 +67,8 @@ Thanks for contacting us, We will reach you soon...
                         <img src={location} />
                       </span>
                       <span>
-                        2912 abcndj Road <br />
-                        los Angeles, CA <br />
+                        2912 Random Road <br />
+                        Los Angeles, CA <br />
                         90017
                       </span>
                     </li>
@@ -81,33 +82,33 @@ Thanks for contacting us, We will reach you soon...
                       <span>
                         <img src={call} />
                       </span>
-                      <span> 910-1623 </span>
+                      <span> 910-1234 </span>
                     </li>
                   </ul>
                 </div>
                 <ul className="sci">
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/" target="_blank">
                       <img className="socialImg" src={one} />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/" target="_blank">
                       <img className="socialImg" src={two} />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/" target="_blank">
                       <img className="socialImg" src={three} />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://in.pinterest.com/" target="_blank">
                       <img className="socialImg" src={four} />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/" target="_blank">
                       <img className="socialImg" src={five} />
                     </a>
                   </li>

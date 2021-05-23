@@ -102,7 +102,7 @@ function ChatRoom() {
         <input className="superchatInput"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          placeholder="say something nice"
+          placeholder="Type something nice..."
         />
 
         <button className="superchatButton" type="submit" disabled={!formValue}>
