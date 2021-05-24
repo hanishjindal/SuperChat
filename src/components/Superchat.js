@@ -6,16 +6,16 @@ import "firebase/auth";
 import "firebase/analytics";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyAVFOsVUKEcWrxJrJwj7AT8llkg08x637U",
-  authDomain: "superchat-b376d.firebaseapp.com",
-  projectId: "superchat-b376d",
-  storageBucket: "superchat-b376d.appspot.com",
-  messagingSenderId: "885431785346",
-  appId: "1:885431785346:web:c4019e87c1c03d894fe19b",
-  measurementId: "G-MYXP27R70Q",
+  apiKey: "AIzaSyDx9OoH_PNgNKcMv3OPdTwzAlsW3BMT51c",
+  authDomain: "superchat-58c12.firebaseapp.com",
+  projectId: "superchat-58c12",
+  storageBucket: "superchat-58c12.appspot.com",
+  messagingSenderId: "462599602643",
+  appId: "1:462599602643:web:0cd16f87f2d3bc15336f26",
+  measurementId: "G-QZ3JCCCZ8F",
 });
 
 const auth = firebase.auth();
@@ -30,7 +30,9 @@ const Superchat = () => {
         <h1>⚛️🔥💬</h1>
         <SignOut />
       </header>
-      <section className="superchatSection">{user ? <ChatRoom /> : <SignIn />}</section>
+      <section className="superchatSection">
+        {user ? <ChatRoom /> : <SignIn />}
+      </section>
     </div>
   );
 };
@@ -57,7 +59,10 @@ function SignIn() {
 function SignOut() {
   return (
     auth.currentUser && (
-      <button className="sign-out superchatButton" onClick={() => auth.signOut()}>
+      <button
+        className="sign-out superchatButton"
+        onClick={() => auth.signOut()}
+      >
         Sign Out
       </button>
     )
@@ -99,7 +104,8 @@ function ChatRoom() {
       </main>
 
       <form className="superchatForm" onSubmit={sendMessage}>
-        <input className="superchatInput"
+        <input
+          className="superchatInput"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
           placeholder="Type something nice..."
@@ -121,7 +127,8 @@ function ChatMessage(props) {
   return (
     <>
       <div className={`message ${messageClass}`}>
-        <img className="superImg"
+        <img
+          className="superImg"
           src={
             photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
           }

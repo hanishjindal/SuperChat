@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Header = () => {
-
   return (
     <div>
       <nav
@@ -31,13 +30,22 @@ const Header = () => {
               <Link className="nav-link active navGap js-scroll-trigger" to="/">
                 Home
               </Link>
-              <Link className="nav-link active navGap js-scroll-trigger" to="/superchat/">
+              <Link
+                className="nav-link active navGap js-scroll-trigger"
+                to="/superchat/"
+              >
                 Superchat
               </Link>
-              <Link className="nav-link active navGap js-scroll-trigger" to="/about">
+              <Link
+                className="nav-link active navGap js-scroll-trigger"
+                to="/about"
+              >
                 About
               </Link>
-              <Link className="nav-link active navGap js-scroll-trigger" to="/contact">
+              <Link
+                className="nav-link active navGap js-scroll-trigger"
+                to="/contact"
+              >
                 Contact
               </Link>
             </div>

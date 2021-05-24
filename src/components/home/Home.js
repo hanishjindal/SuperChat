@@ -14,16 +14,16 @@ const Home = () => {
   return (
     <div className="homeBody">
       <section className="homeSection">
-        <img src={stars} id="stars" />
-        <img src={moon} id="moon" />
-        <img src={mountains_behind} id="mountains_behind" />
+        <img src={stars} alt="Stars" id="stars" />
+        <img src={moon} alt="Moon" id="moon" />
+        <img src={mountains_behind} alt="Mountain" id="mountains_behind" />
         <h2 id="text">
           Super<span>Chat</span>
         </h2>
         <Link to='/superchat' id="btn">
           SuperChat
         </Link>
-        <img src={mountains_front} id="mountains_front" />
+        <img src={mountains_front} alt="Mountain" id="mountains_front" />
       </section>
         <Footer />
       {/* <div className="homeClass">
@@ -41,43 +41,43 @@ const Home = () => {
             //1st segment
             targets: "#btn",
             top: "1500px",
-            duration: 500,
+            duration: 400,
             easing: "easeInOutSine",
           },
           {
             targets: "#stars",
             top: "0px",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutSine",
           },
           {
             targets: "#mountains_behind",
             bottom: "0px",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutSine",
           },
           {
             targets: "#moon",
             top: "0px",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutBack",
           },
           {
             targets: "#mountains_front",
             bottom: "0px",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutSine",
           },
           {
             targets: "#text",
             marginRight: "0px",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutBack",
           },
           {
             targets: "#btn",
             top: "50%",
-            duration: 1000,
+            duration: 800,
             easing: "easeInOutBack",
           },
         ]}
